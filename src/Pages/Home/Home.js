@@ -12,6 +12,7 @@ const Home = () => {
   const [record, setRecord] = useState(false);
   const [text, setText] = useState('');
   const [cc, setCc] = useState(false);
+  const [animation, setAnimation] = useState(false);
 
   const startRec = () => {
     setRecord(true);
@@ -82,16 +83,14 @@ const Home = () => {
           Deepgram AI 🤖
         </a>
 
-        {/* {
-          <>
-            <p className={`rotatingText-adjective hide`}>
-              {leters.slice(-14, -7).map((i) => i + ' ')}
-            </p>
-            <p className={`rotatingText-adjective show`}>
-              {leters.slice(-7, -1).map((i) => i + ' ')}
-            </p>
-          </>
-        } */}
+        <div style={{ display: animation ? 'block' : 'none' }}>
+          <p className={`rotatingText-adjective hide`}>
+            {leters.slice(-14, -7).map((i) => i + ' ')}
+          </p>
+          <p className={`rotatingText-adjective show`}>
+            {leters.slice(-7).map((i) => i + ' ')}
+          </p>
+        </div>
 
         <div>
           <p>{leters.slice(-14, -7).map((i) => i + ' ')}</p>
@@ -123,7 +122,16 @@ const Home = () => {
           click <a href='#start'>start</a> button speak, wait, finaly click{' '}
           <a href='#stop'>stop</a> button
         </p>
-        <p><a onClick={()=>setCc(state=>!state)} >{cc?"hide cc":"show cc"}</a></p>
+        <p>
+          <a onClick={() => setCc((state) => !state)}>
+            {cc ? 'hide cc' : 'show cc'}
+          </a>
+        </p>
+        <p>
+          <a onClick={() => setAnimation((state) => !state)}>
+            {cc ? 'hide animation' : 'show animation'}
+          </a>
+        </p>
       </div>
       <textarea
         className='textarea'

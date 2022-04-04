@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Simple AI Speech Recognition with Deepgram on React-JS 🐱‍💻
 
-## Available Scripts
 
-In the project directory, you can run:
+![img](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2qps8ckia5i0onn9h8ke.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment commands 🔧
+Create a new directory, navigate to that directory in a terminal and clone the GitHub repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/jacksonkasi0/simple-speech-recognition-with-deepgram-in-reactjs.git
+```
 
-### `npm test`
+Change directory to the pattern directory:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+cd simple-speech-recognition-with-deepgram-in-reactjs
+```
 
-### `npm run build`
+From the command line, you should Enter:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install 
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Past your **Deepgram secret key** on **.env**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+>REACT_APP_DEEPGRAM_KEY=**< secret-key >**
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+happy coding 🤗🎉
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Web link 🔗: 
+https://ai-speech-recognition.netlify.app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Read more 📖:
+https://dev.to/jacksonkasi
 
-## Learn More
+### About this application 🧐:
+https://dev.to/jacksonkasi/how-to-perfectly-use-deepgram-in-react-js-1cef
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Some life saving info 🤔💭:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [buffer-is-not-defined](https://stackoverflow.com/questions/68707553/uncaught-referenceerror-buffer-is-not-defined)
+- [if no reponce from deepgram or not showing text, pease read below blog](https://akashmittal.com/unchecked-runtime-lasterror-message-port-closed/#:~:text=Chrome%20throws%20Unchecked%20runtime.lastError%3A%20The%20message%20port%20closed,all%20the%20installed%20extensions%20in%20your%20chrome%20browser)
